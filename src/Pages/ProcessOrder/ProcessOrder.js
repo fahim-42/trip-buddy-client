@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const ProcessOrder = ({ order }) => {
     const { _id, name, email, address, city, mobile } = order;
