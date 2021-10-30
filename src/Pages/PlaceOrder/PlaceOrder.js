@@ -22,7 +22,8 @@ const PlaceOrder = () => {
 
         const newOrder = { name, email, address, city, mobile, status:"pending" }
 
-        fetch('http://localhost:3050/orders', {
+        const url = 'http://localhost:3050/orders';
+        fetch(url, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

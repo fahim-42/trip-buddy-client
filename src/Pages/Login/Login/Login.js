@@ -9,7 +9,7 @@ const Login = () => {
     const history = useHistory();
 
     // console.log('came from', location.state?.from);
-    const redirect_uri = location.state?.from || '/home';
+    const redirect_uri = location.state?.from || "/home";
 
     const handleLogin = () => {
         signInUsingGoogle()
