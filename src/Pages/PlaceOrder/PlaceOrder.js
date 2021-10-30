@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { useParams } from 'react-router';
 import useAuth from './../../Hooks/useAuth';
-import './PlaceOrder.css';
 
 const PlaceOrder = () => {
     const { id } = useParams();
