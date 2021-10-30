@@ -16,11 +16,10 @@ const MyOrders = () => {
             .then(data => setMyOrder(data))
     }, [])
 
-
     return (
-        <div className="col-12">
+        <div className="col-lg-12 col-sm-12">
             <h2 className="text-center fw-bold fst-italic my-3">My Orders</h2>
-            <div className="col-lg-10 mx-auto mt-4 mb-5">
+            <div className="col-lg-10 col-sm-12 mx-auto mt-4 mb-5 overflow-auto">
                 <Table className="px-5" bordered hover>
                     <thead>
                         <tr className="text-center">

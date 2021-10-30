@@ -21,8 +21,8 @@ const About = () => {
                     </div>
 
                 </div>
-                <div className="col-lg-4 col-sm-12 bg-primary border-5 rounded-3">
-                    <form className="ms-0 my-5 ms-5">
+                <div className="col-lg-4 col-sm-12 bg-primary border-5 rounded-3 mx-auto">
+                    <form className="m-5">
                         <h4 className="mb-3 fw-bolder fst-italic">Whats on your mind ?</h4>
                         <input className="border-0 rounded-3 mb-2 py-1 px-5" type="text" placeholder="Your Name" />
                         <br />
