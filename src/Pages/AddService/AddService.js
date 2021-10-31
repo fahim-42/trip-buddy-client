@@ -15,7 +15,8 @@ const AddService = () => {
 
         const newService = { name, image, price, description }
 
-        const url = 'http://localhost:3050/services';
+        // const url = 'http://localhost:3050/services';
+        const url = 'https://haunted-castle-35810.herokuapp.com/services';
         fetch(url, {
             method: 'POST',
             headers: {

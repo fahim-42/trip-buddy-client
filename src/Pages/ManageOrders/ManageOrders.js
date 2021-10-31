@@ -6,7 +6,8 @@ const ManageOrders = () => {
     const [myOrder, setMyOrder] = useState([]);
 
     useEffect(() => {
-        const url = 'http://localhost:3050/orders';
+        // const url = 'http://localhost:3050/orders';
+        const url = 'https://haunted-castle-35810.herokuapp.com/orders';
         fetch(url)
             .then(res => res.json())
             .then(data => setMyOrder(data.orders))
@@ -14,7 +15,7 @@ const ManageOrders = () => {
 
     return (
         <div className="col-lg-12 col-sm-12">
-            <h2 className="text-center fw-bold fst-italic my-3">My Orders</h2>
+            <h2 className="text-center fw-bold fst-italic my-3">All Orders</h2>
             <div className="col-lg-10 col-sm-12 mx-auto mt-4 mb-5 overflow-auto">
                 <Table className="px-5" bordered hover>
                     <thead>

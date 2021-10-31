@@ -21,7 +21,8 @@ const PlaceOrder = () => {
 
         const newOrder = { name, email, address, city, mobile, status:"pending" }
 
-        const url = 'http://localhost:3050/orders';
+        // const url = 'http://localhost:3050/orders';
+        const url = 'https://haunted-castle-35810.herokuapp.com/orders';
         fetch(url, {
             method: 'POST',
             headers: {

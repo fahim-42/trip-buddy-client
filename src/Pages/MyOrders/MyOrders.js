@@ -10,7 +10,8 @@ const MyOrders = () => {
     const [myOrder, setMyOrder] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:3050/orders?name=${client}`;
+        // const url = `http://localhost:3050/orders?name=${client}`;
+        const url = `https://haunted-castle-35810.herokuapp.com/orders?name=${client}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setMyOrder(data.myOrderInfo))

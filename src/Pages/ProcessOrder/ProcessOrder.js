@@ -6,7 +6,8 @@ const ProcessOrder = ({ order }) => {
     const handleDelete = id => {
         const deleteConfirm = window.confirm('Want to delete ?');
         if (deleteConfirm) {
-            const url = `http://localhost:3050/orders/${id}`;
+            // const url = `http://localhost:3050/orders/${id}`;
+            const url = `https://haunted-castle-35810.herokuapp.com/orders/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
