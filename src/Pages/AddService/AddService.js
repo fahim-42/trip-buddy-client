@@ -42,7 +42,7 @@ const AddService = () => {
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="image" className="form-label">Image</label>
-                    <input ref={imageRef} placeholder="Image url with quotation" type="text" className="form-control" id="image" required />
+                    <input ref={imageRef} placeholder="Image url" type="text" className="form-control" id="image" required />
                 </div>
 
                 <div className="col-6">

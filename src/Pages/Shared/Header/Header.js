@@ -22,7 +22,7 @@ const Header = () => {
                         {user.displayName &&
                         <Nav.Link as={HashLink} to="/manage-orders">Manage Orders</Nav.Link>}
                         {user.displayName &&
-                        <Nav.Link as={HashLink} to="/add-service">Add Service</Nav.Link>}
+                        <Nav.Link as={HashLink} to="/add-service">Create New Package</Nav.Link>}
 
                         {user.displayName ?
                             <Nav.Link as={HashLink} onClick={logout} to="/login">Logout</Nav.Link> :
