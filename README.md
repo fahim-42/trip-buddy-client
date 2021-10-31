@@ -1,7 +1,8 @@
 # TripBuddy - A Tour Organizing Company
 
 This project was built using css, bootstrap 5, react, react-bootstrap, react-router-dom, react-router-hash-link, node.js, express.js, mongodb and firebase.
-Watch this site [TripBuddy](https://link.web.app/).
+
+Click to visit [TripBuddy](https://trip-buddy-client.web.app/).
 
 ## Project Features
 
