@@ -26,7 +26,7 @@ const AddService = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.insertedId) {
-                    alert('New service added Successfully');
+                    alert('New Package Added Successfully.');
                     e.target.reset();
                 }
             })

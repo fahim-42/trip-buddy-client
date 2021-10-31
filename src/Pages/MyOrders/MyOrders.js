@@ -13,8 +13,8 @@ const MyOrders = () => {
         const url = `http://localhost:3050/orders?name=${client}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setMyOrder(data))
-    }, [])
+            .then(data => setMyOrder(data.myOrderInfo))
+    }, [client])
 
     return (
         <div className="col-lg-12 col-sm-12">

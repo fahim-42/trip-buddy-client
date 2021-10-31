@@ -9,7 +9,7 @@ const ManageOrders = () => {
         const url = 'http://localhost:3050/orders';
         fetch(url)
             .then(res => res.json())
-            .then(data => setMyOrder(data))
+            .then(data => setMyOrder(data.orders))
     }, [])
 
     return (
