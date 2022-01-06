@@ -1,6 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+
+// animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+    
+    //animation
+    useEffect(() => {
+        AOS.init();
+    });
+
     return (
         <div className="col-lg-10 text-white mx-auto pb-5">
             <h1 className="text-center bg-white text-primary fw-bolder fst-italic py-2 mb-5">About Us</h1>
@@ -21,7 +31,7 @@ const About = () => {
                     </div>
 
                 </div>
-                <div className="col-lg-4 col-sm-12 bg-primary border-5 rounded-3 mx-auto">
+                <div className="col-lg-4 col-sm-12 bg-primary border-5 rounded-3 mx-auto" data-aos="fade-left" data-aos-duration="3000">
                     <form className="m-5">
                         <h4 className="mb-3 fw-bolder fst-italic">Whats on your mind ?</h4>
                         <input className="border-0 rounded-3 mb-2 py-1 px-5" type="text" placeholder="Your Name" />
